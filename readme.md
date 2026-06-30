@@ -72,6 +72,67 @@ Here is a quick overview of the assets included in this repo:
 | Omniscripts                  | Contains the Omniscript import/export files and notes on how to install.                                                                                    |
 | Quote Template               | Two example Microsoft Word document templates to use with this example setup.                                                                               |
 
+## Fix tables and rows going across page breaks
+
+Here is a quick fix for preventing tables from getting split up while going across pages:
+
+- Select the table and/or rows
+- Make sure you are on the '**Home**' tab on the menu bar
+- Click **Line Spacing Options** (arrow going up and down on HOME screen).
+- Click **Line and Page Breaks** tab
+- Click **Keep with next** (under Pagination)
+- Also click **Keep lines together**
+
+Using the options under the table/cell options does not always work, this does.
+
+## Watermark
+
+Instructions on how to get a watermark image to show up in the background either for branding or for quotes not approved.
+
+- Word requires a container in order to position it in the center.
+- We add it to the header section so that it shows up on every page and is out of the way when we're making changes to the template.
+
+### 1. Insert the Shape:
+
+1. Click the '**View**' drop down and click '**Header and Footer**' or double click the header section to edit the header
+2. From the menu bar click **Insert -> Shapes -> Rectangle**.
+3. Draw a rectangle that covers **the entire page**.
+
+### 2. Make it invisible:
+
+1. Click the rectangle.
+2. From the menu bar click **Shape Format**.
+3. Find and click **Shape Fill -> No Fill**.
+4. Find and click **Shape Outline -> No Outline**.
+5. Hover over the icons if you have troubles finding Fill and Outline
+
+### 3. Add the data token:
+
+1. Right-click the rectangle and select **Add Text**.
+2. Inside the shape, type:
+
+```text
+{{IMG_Watermark}}
+```
+
+3. Center it horizontally and vertically (optional, but helps readability).
+4. The size is also controlled via the data mapper.
+
+### 4. Send it behind
+
+This ensures the image (once inserted by OmniStudio) sits behind page content and tables:
+
+1. Click the rectangle.
+2. Right click and select **Send to Back -> Send Behind Text**.
+
+When OmniStudio replaces this with an image, the image will behave as a true background.
+
+### 5. Finish
+
+1. Click '**Close Header and Footer**'
+2. Click '**Save**'
+3. Replace the existing template with this updated template
+
 ## Lessons Learned
 
 Here are some of the lessons learned:
