@@ -1,0 +1,23 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "OmniProcess",
+                "referenceId": "OmniProcessRef1"
+            },
+            "IsMetadataCacheDisabled": false,
+            "IsTestProcedure": false,
+            "Name": "QuoteDocGen",
+            "Language": "English",
+            "PropertySetConfig": "{\n  \"persistentComponent\": [\n    {\n      \"render\": false,\n      \"label\": \"\",\n      \"remoteClass\": \"\",\n      \"remoteMethod\": \"\",\n      \"remoteTimeout\": 30000,\n      \"remoteOptions\": {\n        \"preTransformBundle\": \"\",\n        \"postTransformBundle\": \"\"\n      },\n      \"preTransformBundle\": \"\",\n      \"postTransformBundle\": \"\",\n      \"sendJSONPath\": \"\",\n      \"sendJSONNode\": \"\",\n      \"responseJSONPath\": \"\",\n      \"responseJSONNode\": \"\",\n      \"id\": \"vlcCart\",\n      \"itemsKey\": \"cartItems\",\n      \"modalConfigurationSetting\": {\n        \"modalHTMLTemplateId\": \"vlcProductConfig.html\",\n        \"modalController\": \"ModalProductCtrl\",\n        \"modalSize\": \"lg\"\n      }\n    },\n    {\n      \"render\": false,\n      \"dispOutsideOmni\": false,\n      \"label\": \"\",\n      \"remoteClass\": \"\",\n      \"remoteMethod\": \"\",\n      \"remoteTimeout\": 30000,\n      \"remoteOptions\": {\n        \"preTransformBundle\": \"\",\n        \"postTransformBundle\": \"\"\n      },\n      \"preTransformBundle\": \"\",\n      \"postTransformBundle\": \"\",\n      \"id\": \"vlcKnowledge\",\n      \"itemsKey\": \"knowledgeItems\",\n      \"modalConfigurationSetting\": {\n        \"modalHTMLTemplateId\": \"\",\n        \"modalController\": \"\",\n        \"modalSize\": \"lg\"\n      }\n    }\n  ],\n  \"accessibilityToggle\": true,\n  \"allowSaveForLater\": true,\n  \"allowSaveChanges\": false,\n  \"autoSaveChanges\": false,\n  \"saveNameTemplate\": null,\n  \"saveExpireInDays\": null,\n  \"saveForLaterRedirectPageName\": \"sflRedirect\",\n  \"saveForLaterRedirectTemplateUrl\": \"vlcSaveForLaterAcknowledge.html\",\n  \"saveContentEncoded\": false,\n  \"saveObjectId\": \"%ContextId%\",\n  \"saveURLPatterns\": {},\n  \"autoSaveOnStepNext\": false,\n  \"elementTypeToHTMLTemplateMapping\": {},\n  \"seedDataJSON\": {\n    \"defaultDocumentName\": \"\"\n  },\n  \"trackingCustomData\": {},\n  \"enableKnowledge\": false,\n  \"bLK\": false,\n  \"lkObjName\": null,\n  \"knowledgeArticleTypeQueryFieldsMap\": {},\n  \"timeTracking\": false,\n  \"hideStepChart\": false,\n  \"mergeSavedData\": false,\n  \"visualforcePagesAvailableInPreview\": {},\n  \"cancelType\": \"SObject\",\n  \"allowCancel\": true,\n  \"cancelSource\": \"%ContextId%\",\n  \"cancelRedirectPageName\": \"OmniScriptCancelled\",\n  \"cancelRedirectTemplateUrl\": \"vlcCancelled.html\",\n  \"consoleTabLabel\": \"\",\n  \"wpm\": false,\n  \"ssm\": false,\n  \"message\": {},\n  \"pubsub\": false,\n  \"autoFocus\": false,\n  \"currencyCode\": \"\",\n  \"showInputWidth\": false,\n  \"rtpSeed\": false,\n  \"consoleTabTitle\": null,\n  \"consoleTabIcon\": \"custom:custom18\",\n  \"errorMessage\": {\n    \"custom\": []\n  },\n  \"stylesheet\": {\n    \"newport\": \"\",\n    \"lightning\": \"\",\n    \"newportRtl\": \"\",\n    \"lightningRtl\": \"\"\n  },\n  \"stepChartPlacement\": \"right\",\n  \"disableUnloadWarn\": true,\n  \"scrollBehavior\": \"auto\",\n  \"currentLanguage\": \"en_US\"\n}",
+            "OmniProcessType": "OmniScript",
+            "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+            "SubType": "quoteDoc",
+            "IsOmniScriptEmbeddable": false,
+            "IsIntegrationProcedure": false,
+            "VersionNumber": 1,
+            "Type": "docGeneration",
+            "IsWebCompEnabled": true
+        }
+    ]
+}

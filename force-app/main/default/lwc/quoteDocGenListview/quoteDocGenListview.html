@@ -1,0 +1,43 @@
+<template>
+    <div class="list-view-outer">
+        <div class="list-view-header slds-grid slds-align_absolute-center slds-p-bottom_small">
+            <div class="slds-col slds-grow">
+                <lightning-icon
+                    icon-name="standard:document"
+                    size="small"
+                    class="header-icon">
+                </lightning-icon>
+
+                <span class="list-view-header-title">{cardTitle}</span>
+            </div>
+            <div class="slds-col slds-no-flex">
+                <lightning-button 
+                    variant="neutral" 
+                    label="Refresh"
+                    onclick={handleRefresh}>
+                </lightning-button>
+            </div>
+        </div>
+        <div class="list-view-table-container">
+            <div class="list-view-table">
+                <lightning-datatable
+                    key-field="id"
+                    data={data}
+                    columns={columns}
+                    onrowaction={handleRowAction}
+                    hide-checkbox-column>
+                </lightning-datatable>
+            </div>
+            <template if:true={error}>
+                <p class="slds-text-color_error slds-m-around_medium">{error}</p>
+            </template>
+        </div>
+        <div class="load-more-container">
+            <template if:false={isLoadMoreHidden}>
+                <a href="javascript:void(0)" onclick={loadMoreData} class="show-more-link">
+                    Show More
+                </a>
+            </template>
+        </div>
+    </div>
+</template>

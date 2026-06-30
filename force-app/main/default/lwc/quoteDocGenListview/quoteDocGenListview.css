@@ -1,0 +1,105 @@
+/* -------------------------------------------------- */
+/* OUTER WRAPPER (adds full SLDS-style border)        */
+/* -------------------------------------------------- */
+.list-view-outer {
+    border: 1px solid #d8dde6;
+    border-radius: 0.25rem;
+    background: white;
+    padding: 0; /* ensure table touches edges */
+    margin: 0;
+    overflow: hidden;
+}
+
+/* -------------------------------------------------- */
+/* List view header (SLDS-style)                      */
+/* -------------------------------------------------- */
+.list-view-outer .list-view-header {
+    background: #f3f2f2;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700; /* real list views use bold */
+    font-size: 0.95rem;
+    border-bottom: 1px solid #d8dde6;
+}
+
+.list-view-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-view-header lightning-button {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.list-view-outer .header-icon {
+    margin-right: 0.25rem;
+}
+
+/* -------------------------------------------------- */
+/* Table container flush left/right                   */
+/* -------------------------------------------------- */
+.list-view-table-container {
+    padding: 0;
+    margin: 0;
+}
+
+.list-view-table {
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove padding from datatable completely */
+.list-view-table lightning-datatable {
+    --slds-c-table-container-padding: 0;
+    --slds-c-table-cell-spacing: 0;
+    --slds-c-table-inline-start: 0;
+    --slds-c-table-inline-end: 0;
+    --slds-c-table-cell-padding-block-start: 0;
+    --slds-c-table-cell-padding-block-end: 0;
+    --slds-c-table-cell-padding-inline-start: 0;
+    --slds-c-table-cell-padding-inline-end: 0;
+}
+
+/* -------------------------------------------------- */
+/* Sticky header (same as list view)                  */
+/* -------------------------------------------------- */
+.list-view-table thead th {
+    top: 0;
+    position: sticky;
+    background: #f3f2f2;
+    z-index: 3;
+    box-shadow: inset 0 -1px 0 #d8dde6;
+}
+
+/* -------------------------------------------------- */
+/* Hover rows                                         */
+/* -------------------------------------------------- */
+.list-view-table tbody tr:hover td {
+    background-color: #f3f2f2;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------- */
+/* SHOW MORE (now fully centered)                     */
+/* -------------------------------------------------- */
+.load-more-container {
+    text-align: center;
+    padding: 1rem 0;
+    display: block;
+    width: 100%;
+    background: white;
+}
+
+.show-more-link {
+    color: var(--lwc-colorTextLink, #0170d3);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.show-more-link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Thousands_Separator__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Thousands Separator</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Comma</fullName>
+                <default>true</default>
+                <label>Comma</label>
+            </value>
+            <value>
+                <fullName>Dot</fullName>
+                <default>false</default>
+                <label>Dot</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,30 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "OmniProcessElement",
+        "referenceId": "OmniProcessElementRef1"
+      },
+      "Name": "Options",
+      "IsActive": true,
+      "Type": "Step",
+      "PropertySetConfig": "{\"label\":\"Options\",\"validationRequired\":true,\"previousLabel\":\"Previous\",\"previousWidth\":3,\"nextLabel\":\"Next\",\"nextWidth\":3,\"cancelLabel\":\"Cancel\",\"cancelMessage\":\"Are you sure?\",\"saveLabel\":\"Save for later\",\"saveChangesLabel\":\"Save Changes\",\"autoSaveLabel\":\"Auto Save on Assessment Progress\",\"saveMessage\":\"Are you sure you want to save it for later?\",\"completeLabel\":\"Complete\",\"completeMessage\":\"Are you sure you want to complete the script?\",\"instruction\":\"\",\"showPersistentComponent\":[true,false],\"remoteClass\":\"\",\"remoteMethod\":\"\",\"remoteTimeout\":30000,\"remoteOptions\":{},\"knowledgeOptions\":{\"language\":\"English\",\"publishStatus\":\"Online\",\"keyword\":\"\",\"dataCategoryCriteria\":\"\",\"remoteTimeout\":30000,\"typeFilter\":\"\"},\"show\":null,\"conditionType\":\"Hide if False\",\"HTMLTemplateId\":\"\",\"instructionKey\":\"\",\"chartLabel\":null,\"allowSaveForLater\":false,\"allowSaveChanges\":false,\"autoSaveChanges\":false,\"errorMessage\":{\"custom\":[],\"default\":null},\"wpm\":false,\"ssm\":false,\"message\":{},\"pubsub\":false,\"businessCategory\":\"\",\"businessEvent\":\"\"}",
+      "SequenceNumber": 0,
+      "Level": 0,
+      "OmniProcessId": "@OmniProcessRef1"
+    },
+    {
+      "attributes": {
+        "type": "OmniProcessElement",
+        "referenceId": "OmniProcessElementRef3"
+      },
+      "Name": "GenerateDocument",
+      "IsActive": true,
+      "Type": "Step",
+      "PropertySetConfig": "{\"label\":\"Generate Document\",\"validationRequired\":true,\"previousLabel\":\"Previous\",\"previousWidth\":3,\"nextLabel\":\"Next\",\"nextWidth\":3,\"cancelLabel\":\"Cancel\",\"cancelMessage\":\"Are you sure?\",\"saveLabel\":\"Save for later\",\"saveChangesLabel\":\"Save Changes\",\"saveMessage\":\"Are you sure you want to save it for later?\",\"completeLabel\":\"Complete\",\"completeMessage\":\"Are you sure you want to complete the script?\",\"instruction\":\"\",\"showPersistentComponent\":[true,false],\"remoteClass\":\"\",\"remoteMethod\":\"\",\"remoteTimeout\":30000,\"remoteOptions\":{},\"knowledgeOptions\":{\"language\":\"English\",\"publishStatus\":\"Online\",\"keyword\":\"\",\"dataCategoryCriteria\":\"\",\"remoteTimeout\":30000,\"typeFilter\":\"\"},\"show\":null,\"conditionType\":\"Hide if False\",\"HTMLTemplateId\":\"\",\"instructionKey\":\"\",\"chartLabel\":null,\"allowSaveForLater\":false,\"allowSaveChanges\":false,\"errorMessage\":{\"custom\":[],\"default\":null},\"wpm\":false,\"ssm\":false,\"message\":{},\"pubsub\":false,\"ariaLevel\":2,\"businessCategory\":\"\",\"businessEvent\":\"\"}",
+      "SequenceNumber": 1,
+      "Level": 0,
+      "OmniProcessId": "@OmniProcessRef1"
+    }
+  ]
+}

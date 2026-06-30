@@ -1,0 +1,58 @@
+As of Summer 26 Omniscripts cannot be moved by the usual methods, you have to do some cli magic to get them over. 
+
+Side Note: The org I used to generate these files is running the package because for some reason new RCA org's are still getting generated with the Omniscript package installed so it could be that. I've included the other non-package version zipped as 'omniscript_nopackage.zip' just in case.
+
+Run this command to import the example I have included:
+sf data import tree --plan ./omniscript_import/OmniProcess-OmniProcessElement-plan.json --target-org yourusercredentials or orgalias
+
+Use this in a CLI to export if you need to promote:
+
+sf data tree export \
+  --query "SELECT IsMetadataCacheDisabled, IsTestProcedure, Description, OverrideKey, Name, OmniProcessKey, Language, PropertySetConfig, LastPreviewPage, OmniProcessType, ElementTypeComponentMapping, SubType, ResponseCacheType, IsOmniScriptEmbeddable, CustomJavaScript, IsIntegrationProcedure, VersionNumber, DesignerCustomizationType, Namespace, Type, RequiredPermission, WebComponentKey, IsWebCompEnabled, (SELECT Description, DesignerCustomizationType, Name, EmbeddedOmniScriptKey, IsActive, Type, ParentElementId, PropertySetConfig, SequenceNumber, Level, Id FROM OmniProcessElements) FROM OmniProcess WHERE OmniProcessType = 'OmniScript' AND Id = 'omniscript_id'" \
+  --target-org org_alias \
+  --output-dir export_directory \
+  --plan
+
+If the back slashes are throwing you just remove them and make this command one long line.
+
+The commands to export and import worked in Spring 26 but seems to be tricky in Summer 26. As with everything on the internet I'm sure they'll fix it just know it could be something you need ai to help fix. I had ai fix my version since I did not have access to the org anymore and even recreating it in a new org when I tried to export, delete, and re-import I got the same errors so just heads up this could be tricky.
+
+How to access the documentation in your org:
+
+Click in to any omniscript and in the drop down next to the edit button you will see a 
+"How to Import/Export?" Button. 
+
+This is the what it says from Summer 26
+
+Export Instructions
+To export an Omniscript in the new designer on the standard runtime, use the Salesforce CLI. Omnistudio exports the file in JSON format.
+Before you begin:
+- Set up Salesforce CLI
+- Export any associated Data Mappers, Integration Procedures, and Flexcards, in that order.
+
+From a terminal in VS Code, enter this command:
+
+sfdx force:data:tree:export -q "SELECT IsMetadataCacheDisabled, IsTestProcedure, Description, OverrideKey, Name, OmniProcessKey, Language, PropertySetConfig, LastPreviewPage, OmniProcessType, ElementTypeComponentMapping, SubType, ResponseCacheType, IsOmniScriptEmbeddable, CustomJavaScript, IsIntegrationProcedure, VersionNumber, DesignerCustomizationType, Namespace, Type, RequiredPermission, WebComponentKey, IsWebCompEnabled,(SELECT Description, DesignerCustomizationType, Name, EmbeddedOmniScriptKey, IsActive, Type, ParentElementId, PropertySetConfig, SequenceNumber, Level, Id from OmniProcessElements) from OmniProcess where OmniProcessType='Omniscript' AND id='omniscript_id'" -u org_alias -p -d export_directory -p
+
+- org_alias: The alias of the org from where you’re exporting.
+- export_directory: The directory in the project where the exported JSON is stored.
+- omniscript_id: The ID of the Omniscript that you want to export.
+
+Note: Don't include the isActive field on OmniProcess when you export the Omniscript.
+
+Import Instructions
+
+To import an Omniscript in the new designer on the standard runtime, use the Salesforce CLI.
+
+Before you begin:
+- Set up Salesforce CLI
+- Import any associated Data Mappers, Integration Procedures, and Flexcards, in that order.
+
+From a terminal in VS Code, enter this command:
+
+sfdx force:data:tree:import -p ./export_directory/OmniProcess-OmniProcessElement-plan.json -u org_alias
+
+- org_alias: The alias of the org from where you’re importing.
+- export_directory: The directory in the project where the exported JSON is stored.
+
+Note: If the exported JSON file has isActive=true, the import operation fails.

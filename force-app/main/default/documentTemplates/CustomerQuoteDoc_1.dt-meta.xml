@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocumentTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <documentGenerationMechanism>ServerSide</documentGenerationMechanism>
+    <extractOmniDataTransformName>RCAQuoteDocTemplate</extractOmniDataTransformName>
+    <fileExtension>docx</fileExtension>
+    <hasBatchableSection>false</hasBatchableSection>
+    <isActive>true</isActive>
+    <isSectionProcessed>false</isSectionProcessed>
+    <mapperOmniDataTransformName>RCAQuoteDocTemplateTransform</mapperOmniDataTransformName>
+    <name>CustomerQuoteDoc</name>
+    <shouldDisplayUnmappedToken>false</shouldDisplayUnmappedToken>
+    <shouldExtractEmbeddedTmplToken>false</shouldExtractEmbeddedTmplToken>
+    <status>Active</status>
+    <tokenList>quoteNumber,quoteDate,quoteExpiration,salesPerson,aName,cName,email,phone,billingStreet,billingCity,billingState,billingPostalCode,billingCountry,shippingStreet,shippingCity,shippingState,shippingPostalCode,shippingCountry,lines:productName,lines:listPS,lines:discount,lines:salesPS,lines:qty,lines:salesTS,quoteTS</tokenList>
+    <tokenMappingMethodType>OmniDataTransform</tokenMappingMethodType>
+    <tokenMappingType>JSON</tokenMappingType>
+    <type>MicrosoftWord</type>
+    <uniqueName>CustomerQuoteDoc_1</uniqueName>
+    <versionNumber>1</versionNumber>
+</DocumentTemplate>

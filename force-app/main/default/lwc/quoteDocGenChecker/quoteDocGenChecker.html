@@ -1,0 +1,62 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium">
+
+            <!-- Loading State -->
+            <template if:true={loading}>
+                <div class="loading-container">
+                    <div class="slds-media slds-media_center">
+
+                        <div class="slds-media__figure spinner-wrapper">
+                            <lightning-spinner
+                                size="medium"
+                                alternative-text="Processing..."
+                                variant="brand">
+                            </lightning-spinner>
+                        </div>
+
+                        <div class="slds-media__body slds-p-left_medium">
+                            <p class="slds-text-heading_small">
+                                <strong>Generating your document...</strong>
+                            </p>
+                            <p>
+                                This usually takes 5–10 seconds. Please be patient.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </template>
+
+            <!-- Error / Timeout State -->
+            <template if:true={hasError}>
+                <template if:true={errorMessage}>
+                    <p class="slds-text-color_error slds-text-align_center">
+                        {errorMessage}
+                    </p>
+                </template>
+
+                <!-- Special Timeout Message (errorMessage == null) -->
+                <template if:false={errorMessage}>
+                    <p class="slds-text-align_center slds-text-heading_small slds-m-bottom_small">
+                        <strong>Document generation is taking longer than expected.</strong>
+                    </p>
+                    <p class="slds-text-align_center slds-m-bottom_medium">
+                        If you click on the <strong>Related</strong> tab and refresh the
+                        <strong>Quote Documents</strong> related list, your document should appear within a few minutes.
+                    </p>
+                </template>
+
+                <!-- Continue Button -->
+                <div class="slds-text-align_center slds-m-top_medium">
+                    <lightning-button
+                        variant="brand"
+                        label="Continue"
+                        onclick={handleContinue}>
+                    </lightning-button>
+                </div>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

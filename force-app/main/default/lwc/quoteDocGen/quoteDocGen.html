@@ -1,0 +1,12 @@
+<template>
+    <template if:true={isReady}>
+        <lightning-omnistudio-omniscript
+            record-id={recordId}
+            sub-type={subType}
+            language={language}
+            type={type}
+            script-header-def={omniJsonData}
+            prefill={prefill}
+        ></lightning-omnistudio-omniscript>
+    </template>
+</template>

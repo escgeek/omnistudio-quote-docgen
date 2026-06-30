@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Symbol_Position__c</fullName>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Symbol Position</label>
+    <required>false</required>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Prefix</fullName>
+                <default>true</default>
+                <label>Prefix</label>
+            </value>
+            <value>
+                <fullName>Suffix</fullName>
+                <default>false</default>
+                <label>Suffix</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

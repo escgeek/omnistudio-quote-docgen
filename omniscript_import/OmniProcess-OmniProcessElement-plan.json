@@ -1,0 +1,24 @@
+[
+    {
+        "sobject": "OmniProcess",
+        "saveRefs": true,
+        "files": [
+            "OmniProcess.json"
+        ]
+    },
+    {
+        "sobject": "OmniProcessElement",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "OmniProcessElement.parents.json"
+        ]
+    },
+    {
+        "sobject": "OmniProcessElement",
+        "resolveRefs": true,
+        "files": [
+            "OmniProcessElement.children.json"
+        ]
+    }
+]

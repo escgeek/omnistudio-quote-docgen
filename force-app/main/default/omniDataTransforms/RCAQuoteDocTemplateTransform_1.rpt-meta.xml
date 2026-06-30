@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;shippingCity&quot; : &quot;Burlington&quot;,
+  &quot;shippingStreet&quot; : &quot;525 S. Lexington Ave&quot;,
+  &quot;billingState&quot; : &quot;NC&quot;,
+  &quot;shippingPostalCode&quot; : &quot;27215&quot;,
+  &quot;quoteNumber&quot; : &quot;00000054&quot;,
+  &quot;qli&quot; : {
+    &quot;Id&quot; : &quot;0QLak000001kYKfGAM&quot;
+  },
+  &quot;phone&quot; : &quot;(336) 222-7000&quot;,
+  &quot;billingStreet&quot; : &quot;525 S. Lexington Ave&quot;,
+  &quot;billingPostalCode&quot; : &quot;27215&quot;,
+  &quot;shippingCountry&quot; : &quot;USA&quot;,
+  &quot;cName&quot; : &quot;005ak00000SvRGMAA3&quot;,
+  &quot;billingCountry&quot; : &quot;USA&quot;,
+  &quot;shippingState&quot; : &quot;NC&quot;,
+  &quot;currencyIsoCode&quot; : &quot;USD&quot;,
+  &quot;salesPerson&quot; : &quot;Eric Clay&quot;,
+  &quot;email&quot; : &quot;jrogers@burlington.com&quot;,
+  &quot;billingCity&quot; : &quot;Burlington&quot;
+}</expectedInputJson>
+    <expectedOutputJson>{
+  &quot;shippingCity&quot; : &quot;Burlington&quot;,
+  &quot;shippingStreet&quot; : &quot;525 S. Lexington Ave&quot;,
+  &quot;billingState&quot; : &quot;NC&quot;,
+  &quot;shippingPostalCode&quot; : &quot;27215&quot;,
+  &quot;quoteNumber&quot; : &quot;00000054&quot;,
+  &quot;qli&quot; : {
+    &quot;Id&quot; : &quot;0QLak000001kYKfGAM&quot;
+  },
+  &quot;phone&quot; : &quot;(336) 222-7000&quot;,
+  &quot;billingStreet&quot; : &quot;525 S. Lexington Ave&quot;,
+  &quot;billingPostalCode&quot; : &quot;27215&quot;,
+  &quot;shippingCountry&quot; : &quot;USA&quot;,
+  &quot;cName&quot; : &quot;005ak00000SvRGMAA3&quot;,
+  &quot;billingCountry&quot; : &quot;USA&quot;,
+  &quot;shippingState&quot; : &quot;NC&quot;,
+  &quot;currencyIsoCode&quot; : &quot;USD&quot;,
+  &quot;salesPerson&quot; : &quot;Eric Clay&quot;,
+  &quot;email&quot; : &quot;jrogers@burlington.com&quot;,
+  &quot;billingCity&quot; : &quot;Burlington&quot;
+}</expectedOutputJson>
+    <fieldLevelSecurityEnabled>true</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <isManagedUsingStdDesigner>true</isManagedUsingStdDesigner>
+    <name>RCAQuoteDocTemplateTransform</name>
+    <nullInputsIncludedInOutput>true</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>834b395d-242e-4d4e-b495-cface5c0d8ae</globalKey>
+        <inputFieldName>lines:discount</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QnbN</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QnbN</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>lines:discount</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>04570a69-31ae-4436-aa5e-7f17c17eab2b</globalKey>
+        <inputFieldName>lines:salesTotalString</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QnjR</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QnjR</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>lines:salesTS</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>cb1f2f13-35ce-4f26-87fc-892b2e7d294f</globalKey>
+        <inputFieldName>billingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNmv</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNmv</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>billingStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d8ced51e-b518-4508-a324-479fee6362e8</globalKey>
+        <inputFieldName>email</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNyD</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNyD</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>email</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>72014a6c-724b-44c4-955a-0e8c5da788b7</globalKey>
+        <inputFieldName>phone</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNuz</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNuz</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>phone</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c6242f3a-a804-4580-94bd-fa98c1c4983e</globalKey>
+        <inputFieldName>shippingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNq9</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNq9</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>shippingCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &apos;RCA_DocGenFunctions&apos; &apos;summarizeQuoteLines&apos; | var:qli LIST FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&apos;RCA_DocGenFunctions&apos;, &apos;summarizeQuoteLines&apos;, LIST(%qli%))</formulaExpression>
+        <formulaResultPath>lines</formulaResultPath>
+        <formulaSequence>1.0</formulaSequence>
+        <globalKey>3d3759f3-87c8-4270-83b7-eb115dafcb9d</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QnWX</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QnWX</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f9ec75b6-beea-48c5-9488-055002e831be</globalKey>
+        <inputFieldName>shippingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RO33</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RO33</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>shippingPostalCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>88eb9fe9-8307-4210-b01e-b2c50bf271db</globalKey>
+        <inputFieldName>quoteTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QoFh</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QoFh</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>quoteTotal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b1c469b7-6e05-46d6-a970-3f76b9e4e80b</globalKey>
+        <inputFieldName>lines:salesTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000Qneb</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000Qneb</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>lines:salesTotal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b72cc809-83a2-49ca-b73e-277891258d8e</globalKey>
+        <inputFieldName>shippingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNlJ</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNlJ</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>shippingStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| | TODAY 90 ADDDAY</formulaConverted>
+        <formulaExpression>ADDDAY(TODAY(),90)</formulaExpression>
+        <formulaResultPath>quoteExpiration</formulaResultPath>
+        <formulaSequence>5.0</formulaSequence>
+        <globalKey>dd6fb421-fd83-4ea9-b4bf-cfcce81fb826</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RO7t</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RO7t</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2b675860-7bf6-4297-9733-0a6c74427249</globalKey>
+        <inputFieldName>qli:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000Qnmf</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000Qnmf</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>qli:Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>5d40ef23-41f4-4b0c-a37c-67bdb30e15ae</globalKey>
+        <inputFieldName>billingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNtN</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNtN</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>billingCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>950</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1edec164-8b73-454c-956e-84306b20189e</globalKey>
+        <inputFieldName>IMG_Watermark:height</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000V7bV</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000V7bV</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>IMG_Watermark:height</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| &apos;RCA_DocGenFunctions&apos; &apos;formatCurrency&apos; var:quoteTotal var:currencyIsoCode FUNCTION</formulaConverted>
+        <formulaExpression>FUNCTION(&apos;RCA_DocGenFunctions&apos;, &apos;formatCurrency&apos;, %quoteTotal%, %currencyIsoCode%)</formulaExpression>
+        <formulaResultPath>quoteTS</formulaResultPath>
+        <formulaSequence>3.0</formulaSequence>
+        <globalKey>e9f38e12-38b8-43c9-9c74-8c63fc2fab89</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QoE5</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QoE5</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>08e2334c-f491-4b43-b1e5-447d728efe7d</globalKey>
+        <inputFieldName>lines:listPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QnZl</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QnZl</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>lines:listPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4a0ef607-90ea-4e84-9c0c-37548cffe8b0</globalKey>
+        <inputFieldName>quoteDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RO6H</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RO6H</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MMM dd yyyy)</outputFieldFormat>
+        <outputFieldName>quoteDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>23a78674-fbb6-47e9-a21f-318e3edd2820</globalKey>
+        <inputFieldName>lines:salesPriceString</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000Qnhp</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000Qnhp</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>lines:salesPS</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>89255162-cd47-4caf-8ace-6f9fac86ba01</globalKey>
+        <inputFieldName>cName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNoX</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNoX</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>cName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4c58c96e-29be-4f8f-a945-de9ffdc02457</globalKey>
+        <inputFieldName>currencyIsoCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QoQz</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QoQz</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>currencyIsoCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>2ee46804-a767-4759-992a-81d024b1cb94</globalKey>
+        <inputFieldName>shippingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNwb</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNwb</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>shippingCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ed320c89-f369-414f-8a12-d1a549d25a78</globalKey>
+        <inputFieldName>salesPerson</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000ROCj</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000ROCj</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>salesPerson</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>14905e99-d826-4399-ad97-109eda7ea73a</globalKey>
+        <inputFieldName>billingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RO1R</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RO1R</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>billingState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>9eec1d4a-4d5d-4b94-b949-01cec88d8ffe</globalKey>
+        <inputFieldName>IMG_Watermark</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000V7Rp</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000V7Rp</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>IMG_Watermark:src</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>ae811fa6-34ce-44b8-806d-b92d22ef679d</globalKey>
+        <inputFieldName>lines:quantity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QnY9</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QnY9</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>lines:qty</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>7dc8eb91-8371-4260-89eb-238cc3ec9e7f</globalKey>
+        <inputFieldName>quoteTS</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QoHJ</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QoHJ</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>quoteTS</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>97c791d2-7f7c-44d5-a5b3-02e0abd261c2</globalKey>
+        <inputFieldName>lines:listPriceString</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QngD</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QngD</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>lines:listPS</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f362261e-9216-4a0c-9ec3-7b522e055a09</globalKey>
+        <inputFieldName>billingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNjh</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNjh</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>billingPostalCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>8acceeb1-5e76-40cc-a807-6019fbc4139a</globalKey>
+        <inputFieldName>quoteExpiration</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RO9V</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RO9V</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Date(MMM dd yyyy)</outputFieldFormat>
+        <outputFieldName>quoteExpiration</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>b8b1432a-ef40-4a3c-b2af-41e00120b85d</globalKey>
+        <inputFieldName>quoteNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000Qdyb</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000Qdyb</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>quoteNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>447e83e8-b8b9-4950-a1c0-2a3e0c36a823</globalKey>
+        <inputFieldName>lines:productName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000ROSr</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000ROSr</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>lines:productName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>4ad0faf9-b61b-43ed-97cd-2af7f006f309</globalKey>
+        <inputFieldName>aName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000ROW5</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000ROW5</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>aName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| var:lines:salesTotal SUM</formulaConverted>
+        <formulaExpression>SUM(%lines:salesTotal%)</formulaExpression>
+        <formulaResultPath>quoteTotal</formulaResultPath>
+        <formulaSequence>2.0</formulaSequence>
+        <globalKey>17c075b8-9098-408a-82c3-3ff734bcf7b8</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000QnoH</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000QnoH</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>1cb5ca37-a836-488b-b134-876faded25f7</globalKey>
+        <inputFieldName>shippingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNrl</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNrl</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>shippingState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>f33787d8-7d8b-40c1-b5b0-9a17027e0d12</globalKey>
+        <inputFieldName>billingCountry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RNzp</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RNzp</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>billingCountry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>d35eed36-073f-445e-8bdb-f5c2576289fb</globalKey>
+        <inputFieldName>lines:salesPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000Qncz</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000Qncz</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Double</outputFieldFormat>
+        <outputFieldName>lines:salesPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <defaultValue>750</defaultValue>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>bc9822d8-e90b-4965-8210-679ab07702b5</globalKey>
+        <inputFieldName>IMG_Watermark:width</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000V7YH</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000V7YH</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Integer</outputFieldFormat>
+        <outputFieldName>IMG_Watermark:width</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <formulaConverted>| TODAY</formulaConverted>
+        <formulaExpression>TODAY()</formulaExpression>
+        <formulaResultPath>quoteDate</formulaResultPath>
+        <formulaSequence>4.0</formulaSequence>
+        <globalKey>24223687-0727-4c9e-9806-d8c5feeac7f4</globalKey>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000RO4f</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000RO4f</omniDataTransformationId>
+        <outputCreationSequence>0.0</outputCreationSequence>
+        <outputFieldName>Formula</outputFieldName>
+        <outputObjectName>Formula</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>c889042a-d136-4f78-b136-35faa890e92d</globalKey>
+        <inputFieldName>quoteId</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RCAQuoteDocTemplateTransform</name>
+        <omniDataTransformation>0kdak000000ROFx</omniDataTransformation>
+        <omniDataTransformationId>0kdak000000ROFx</omniDataTransformationId>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>String</outputFieldFormat>
+        <outputFieldName>quoteId</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <transformValuesMappings>{ }</transformValuesMappings>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>Document Template</outputType>
+    <previewJsonData>{
+  &quot;shippingCity&quot; : &quot;&quot;,
+  &quot;shippingStreet&quot; : &quot;&quot;,
+  &quot;billingState&quot; : &quot;&quot;,
+  &quot;shippingPostalCode&quot; : &quot;&quot;,
+  &quot;quoteId&quot; : &quot;0Q0ak000001bJ38CAE&quot;,
+  &quot;quoteNumber&quot; : &quot;00000021&quot;,
+  &quot;qli&quot; : [ {
+    &quot;Id&quot; : &quot;0QLak000001i9EPGAY&quot;
+  }, {
+    &quot;Id&quot; : &quot;0QLak000001i9ERGAY&quot;
+  } ],
+  &quot;billingStreet&quot; : &quot;&quot;,
+  &quot;phone&quot; : &quot;&quot;,
+  &quot;cName&quot; : &quot;&quot;,
+  &quot;billingPostalCode&quot; : &quot;&quot;,
+  &quot;shippingCountry&quot; : &quot;&quot;,
+  &quot;aName&quot; : &quot;&quot;,
+  &quot;billingCountry&quot; : &quot;&quot;,
+  &quot;shippingState&quot; : &quot;&quot;,
+  &quot;IMG_Watermark&quot; : &quot;069ak00000M5XI1AAN&quot;,
+  &quot;currencyIsoCode&quot; : &quot;USD&quot;,
+  &quot;salesPerson&quot; : &quot;Eric Clay&quot;,
+  &quot;billingCity&quot; : &quot;&quot;,
+  &quot;email&quot; : &quot;&quot;
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <targetOutputFileName>CustomerQuoteDoc(Version 1)</targetOutputFileName>
+    <type>Transform</type>
+    <uniqueName>RCAQuoteDocTemplateTransform_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

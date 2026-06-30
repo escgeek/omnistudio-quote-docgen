@@ -1,0 +1,58 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "OmniProcessElement",
+                "referenceId": "OmniProcessElementRef1"
+            },
+            "Name": "Options",
+            "IsActive": true,
+            "Type": "Step",
+            "PropertySetConfig": "{\"label\":\"Options\",\"validationRequired\":true,\"previousLabel\":\"Previous\",\"previousWidth\":3,\"nextLabel\":\"Next\",\"nextWidth\":3,\"cancelLabel\":\"Cancel\",\"cancelMessage\":\"Are you sure?\",\"saveLabel\":\"Save for later\",\"saveChangesLabel\":\"Save Changes\",\"autoSaveLabel\":\"Auto Save on Assessment Progress\",\"saveMessage\":\"Are you sure you want to save it for later?\",\"completeLabel\":\"Complete\",\"completeMessage\":\"Are you sure you want to complete the script?\",\"instruction\":\"\",\"showPersistentComponent\":[true,false],\"remoteClass\":\"\",\"remoteMethod\":\"\",\"remoteTimeout\":30000,\"remoteOptions\":{},\"knowledgeOptions\":{\"language\":\"English\",\"publishStatus\":\"Online\",\"keyword\":\"\",\"dataCategoryCriteria\":\"\",\"remoteTimeout\":30000,\"typeFilter\":\"\"},\"show\":null,\"conditionType\":\"Hide if False\",\"HTMLTemplateId\":\"\",\"instructionKey\":\"\",\"chartLabel\":null,\"allowSaveForLater\":false,\"allowSaveChanges\":false,\"autoSaveChanges\":false,\"errorMessage\":{\"custom\":[],\"default\":null},\"wpm\":false,\"ssm\":false,\"message\":{},\"pubsub\":false,\"businessCategory\":\"\",\"businessEvent\":\"\"}",
+            "SequenceNumber": 0,
+            "Level": 0,
+            "OmniProcessId": "@OmniProcessRef1"
+        },
+        {
+            "attributes": {
+                "type": "OmniProcessElement",
+                "referenceId": "OmniProcessElementRef2"
+            },
+            "Name": "DocumentTitle",
+            "IsActive": true,
+            "Type": "Text",
+            "ParentElementId": "@OmniProcessElementRef1",
+            "PropertySetConfig": "{\"controlWidth\":12,\"label\":\"Document Name\",\"showInputWidth\":false,\"inputWidth\":12,\"required\":true,\"repeat\":false,\"repeatClone\":false,\"repeatLimit\":null,\"readOnly\":false,\"defaultValue\":\"%defaultDocumentName%\",\"help\":false,\"helpText\":\"\",\"mask\":\"\",\"pattern\":\"\",\"ptrnErrText\":\"\",\"minLength\":0,\"maxLength\":255,\"placeholder\":\"\",\"show\":null,\"conditionType\":\"Hide if False\",\"accessibleInFutureSteps\":false,\"debounceValue\":0,\"HTMLTemplateId\":\"\",\"hide\":false,\"disOnTplt\":false}",
+            "SequenceNumber": 0,
+            "Level": 1,
+            "OmniProcessId": "@OmniProcessRef1"
+        },
+        {
+            "attributes": {
+                "type": "OmniProcessElement",
+                "referenceId": "OmniProcessElementRef3"
+            },
+            "Name": "GenerateDocument",
+            "IsActive": true,
+            "Type": "Step",
+            "PropertySetConfig": "{\"label\":\"Generate Document\",\"validationRequired\":true,\"previousLabel\":\"Previous\",\"previousWidth\":3,\"nextLabel\":\"Next\",\"nextWidth\":3,\"cancelLabel\":\"Cancel\",\"cancelMessage\":\"Are you sure?\",\"saveLabel\":\"Save for later\",\"saveChangesLabel\":\"Save Changes\",\"saveMessage\":\"Are you sure you want to save it for later?\",\"completeLabel\":\"Complete\",\"completeMessage\":\"Are you sure you want to complete the script?\",\"instruction\":\"\",\"showPersistentComponent\":[true,false],\"remoteClass\":\"\",\"remoteMethod\":\"\",\"remoteTimeout\":30000,\"remoteOptions\":{},\"knowledgeOptions\":{\"language\":\"English\",\"publishStatus\":\"Online\",\"keyword\":\"\",\"dataCategoryCriteria\":\"\",\"remoteTimeout\":30000,\"typeFilter\":\"\"},\"show\":null,\"conditionType\":\"Hide if False\",\"HTMLTemplateId\":\"\",\"instructionKey\":\"\",\"chartLabel\":null,\"allowSaveForLater\":false,\"allowSaveChanges\":false,\"errorMessage\":{\"custom\":[],\"default\":null},\"wpm\":false,\"ssm\":false,\"message\":{},\"pubsub\":false,\"ariaLevel\":2,\"businessCategory\":\"\",\"businessEvent\":\"\"}",
+            "SequenceNumber": 1,
+            "Level": 0,
+            "OmniProcessId": "@OmniProcessRef1"
+        },
+        {
+            "attributes": {
+                "type": "OmniProcessElement",
+                "referenceId": "OmniProcessElementRef4"
+            },
+            "Name": "GenerateAndPreviewDocument",
+            "IsActive": true,
+            "Type": "Custom Lightning Web Component",
+            "ParentElementId": "@OmniProcessElementRef3",
+            "PropertySetConfig": "{\"controlWidth\":12,\"label\":\"Generate and Preview Document\",\"show\":null,\"conditionType\":\"Hide if False\",\"hide\":false,\"lwcName\":\"runtime_industries_docgen__osGenerateAndPreviewDocument\",\"bStandalone\":false,\"customAttributes\":[{\"name\":\"context-id\",\"source\":\"%recordId%\"},{\"name\":\"template-id\",\"source\":\"%templateId%\"},{\"name\":\"document-title\",\"source\":\"%Options:DocumentTitle%\"},{\"name\":\"font-source\",\"source\":\"%fontSource%\"},{\"name\":\"attach-document\",\"source\":\"%attachDocument%\"},{\"name\":\"service-function\",\"source\":\"%serviceFunction%\"}]}",
+            "SequenceNumber": 0,
+            "Level": 1,
+            "OmniProcessId": "@OmniProcessRef1"
+        }
+    ]
+}
